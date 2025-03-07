@@ -13,8 +13,9 @@ git remote add origin https://github.com/liruiuu/git_study.git
 git branch -M main
 git push -u origin main
 
-克隆一个仓库
+…or clone an existing repository from remote
 git  clone https://github.com/liruiuu/git_study.git
 git add .
 git  commit -m "changes log"
-git push -u origin master  
+git push -u origin master 
+git push -u origin main
