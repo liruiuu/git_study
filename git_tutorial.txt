@@ -14,8 +14,14 @@ git branch -M main
 git push -u origin main
 
 …or clone an existing repository from remote
-git  clone https://github.com/liruiuu/git_study.git
+git  clone https://gitee.com/ryze0068/pdf-ryze.git
 git add .
 git  commit -m "changes log"
 git push -u origin master 
 git push -u origin main
+
+git config --global user.name "Ryze_lee"
+git config --global user.email "15109249+ryze0068@user.noreply.gitee.com"
+
+git config --global user.name "liruiuu"
+git config --global user.email "liruiuu@163.com"
