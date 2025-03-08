@@ -14,11 +14,16 @@ git branch -M main
 git push -u origin main
 
 …or clone an existing repository from remote
-git  clone https://gitee.com/ryze0068/pdf-ryze.git
+git clone https://gitee.com/ryze0068/pdf-ryze.git
 git add .
-git  commit -m "changes log"
-git push -u origin master 
+git commit -m "first commit"
 git push -u origin main
+git push -u origin master 
+
+git clone https://github.com/liruiuu/git_study.git
+git pull origin main   #这个命令是`git fetch`命令和`git merge`命令的组合，可以一次性拉取远程仓库的代码并合并到当前分支
+git remote add origin https://gitee.com/ryze0068/git_study.git
+
 
 git config --global user.name "Ryze_lee"
 git config --global user.email "15109249+ryze0068@user.noreply.gitee.com"
