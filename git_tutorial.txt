@@ -7,7 +7,7 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/liruiuu/PDF-Ryze.git
 git push -u origin main
-
+怕
 …or push an existing repository from the command line
 git remote add origin https://github.com/liruiuu/git_study.git
 git branch -M main
@@ -23,7 +23,7 @@ git push -u origin master
 git clone https://github.com/liruiuu/git_study.git
 git pull origin main   #这个命令是`git fetch`命令和`git merge`命令的组合，可以一次性拉取远程仓库的代码并合并到当前分支
 git remote remove origin
-git remote add origin https://github.com/liruiuu/git_study.git
+git remote add origin https://gitee.com/ryze0068/pdf-ryze.git
 
 
 git config --global user.name "Ryze_lee"
