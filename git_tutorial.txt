@@ -45,8 +45,8 @@ git config user.email   查看邮箱
 
 
 
-git config --global user.name "Ryze_lee"
+git config --global user.name "ryze-lee"
 git config --global user.email "15109249+ryze0068@user.noreply.gitee.com"
 
-git config --global user.name "liruiuu"
-git config --global user.email "liruiuu@163.com"
+git config --global user.name "ryze-lee"
+git config --global user.email "ryze_lee@qq.com"
