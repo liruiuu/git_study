@@ -25,6 +25,23 @@ git pull origin main   #这个命令是`git fetch`命令和`git merge`命令的�
 git remote remove origin
 git remote add origin https://gitee.com/ryze0068/git_study.git
 
+git status   查看当前分支和状态
+git remote -v   检查远程仓库名称
+git branch -r    检查远程分支
+git branch -m <旧分支名> <新分支名>           本地分支重命名
+git push origin --delete <旧分支名>   不能删除默认分支
+git push origin <新分支名>
+
+分支重命名
+git branch -m <旧分支名> <新分支名> 
+git fetch origin 本地仓库会获取到 origin 仓库所有分支的最新提交信
+git branch -u origin/<BRANCH> 将当前本地分支设置为跟踪指定的远程分支
+git remote set-head origin -a
+
+git config user.name   查看用户名
+git config user.email   查看邮箱
+
+
 
 git config --global user.name "Ryze_lee"
 git config --global user.email "15109249+ryze0068@user.noreply.gitee.com"
