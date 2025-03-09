@@ -30,9 +30,11 @@ git remote add origin https://gitee.com/ryze0068/git_study.git
 git status   查看当前分支和状态
 git remote -v   检查远程仓库名称
 git branch -r    检查远程分支
+git branch       检查本地分支
 git branch -m <旧分支名> <新分支名>           本地分支重命名
 git push origin --delete <旧分支名>   不能删除默认分支
 git push origin <新分支名>
+git switch -c improve  创建一个新分支并立即切换到它
 
 分支重命名
 git branch -m <旧分支名> <新分支名> 
@@ -40,9 +42,15 @@ git fetch origin 本地仓库会获取到 origin 仓库所有分支的最新提�
 git branch -u origin/<BRANCH> 将当前本地分支设置为跟踪指定的远程分支
 git remote set-head origin -a
 
+新建improve并推送到远程仓库
+git branch       
+git switch -c improve  
+git add .
+git commit -m "first commit"
+git push -u origin improve 
+
 git config user.name   查看用户名
 git config user.email   查看邮箱
-
 
 
 git config --global user.name "ryze-lee"
