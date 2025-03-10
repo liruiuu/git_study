@@ -1,0 +1,73 @@
+          $ROOT=$(pwd)
+          mkdir -p ${ROOT}\build\bin
+          go install github.com/wailsapp/wails/v2/cmd/wails@latest
+          go mod tidy
+
+          cd ${ROOT}\frontend
+          npm install
+
+          cd ${ROOT}\thirdparty
+          pip install -r requirements.txt
+          pyinstaller -F -w pdf.py
+          cp dist/pdf.exe ${ROOT}\build\bin\
+          cp ocr.py ${ROOT}\build\bin\
+          cp convert_external.py ${ROOT}\build\bin\
+          
+          cd $ROOT
+          choco install -y upx
+          wails build -upx
+          iscc.exe build\windows\installer\setup.iss
+
+
+python greeter_server.py
+pyinstaller -F assistant-2024-10-20.py
+
+
+go install github.com/wailsapp/wails/v2/cmd/wails@latest
+go env -w GOPROXY=https://goproxy.cn
+
+         pyinstaller -F -w greeter_server.py
+
+         pyinstaller -F pdf.py
+
+         pyinstaller -F assistant-2024-10-20.py
+
+         pyinstaller -F allotTool_v2.2.py
+
+
+go run go_client.go
+
+
+rotate --angle 90 C:\\Users\\L\\Desktop\\2.pdf
+
+go run greeter_client/main.go
+go run greeter_server/main.go
+
+starting command: fork/exec C:\Users\L\AppData\Local\Temp\pdf.exe
+
+Python: Select Interpreter
+
+
+		log.Printf("i++: %d", i)
+		r, err := c.SayHello(ctx, &pb.HelloRequest{MyStrings: myStrings})
+		if err == nil {
+			log.Printf("Greeting: %s", r.GetMessage())
+			break
+		} else {
+			time.Sleep(5 * time.Second)
+			// log.Fatalf("could not greet: %v", err)
+		}
+https://hn78hj76p2.feishu.cn/docx/SC2ldCwwMo0nKUx7BU1ceLxInog
+
+go clean -i -x github.com/grpc/grpc-go
+go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.3.0    不需要，忽略
+
+
+protoc-gen-go-grpc --version
+
+go get google.golang.org/grpc@v1.54.0不行
+go get google.golang.org/grpc@v1.62.2 不行
+go get google.golang.org/grpc@v1.64.0
+go get google.golang.org/grpc@latest
+
+grpc --version

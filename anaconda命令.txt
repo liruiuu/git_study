@@ -1,0 +1,79 @@
+
+
+conda install python=3.7.5
+
+配置源：
+正确的解决方法：
+先删除已经设定好滴默认镜像源，执行下面的命令后就恢复了原来的源
+conda config --remove-key channels
+重新添加清华源
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+conda config --add channels https://pypi.tuna.tsinghua.edu.cn/simple/
+conda config --set show_channel_urls yes
+
+
+conda config --show channels      查看安装的源
+————————————————
+版权声明：本文为CSDN博主「shy^-^cky」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/ckc_csdn/article/details/110824643
+
+conda config --remove channels 'https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/'
+
+Python: Select Interpreter
+
+python --version
+
+
+conda create -n hello-env
+
+conda create -n new_env_name python=3.13.0
+conda create -n newenv python=3.13.0
+conda activate newenv
+conda deactivate
+anaconda删除虚拟环境
+假设你的环境名字叫: octopus
+pip install openpyxl
+conda remove -n octopus --all
+
+anaconda查看环境包
+
+conda info --envs
+
+2. 激活环境
+
+运行：conda activate 环境名或者环境的路径
+conda activate  pyth3.7-env
+
+conda remove -n  pyth3.7-env --all
+
+
+
+可查看目前所安装的所有包
+pip list
+
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope CurrentUser
+Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope LocalMachine
+Set-ExecutionPolicy -ExecutionPolicy Restricted -Scope CurrentUser
+
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned              powershell  更改权限
+
+Set-ExecutionPolicy -ExecutionPolicy Restricted
+
+Set-ExecutionPolicy 是一个 PowerShell 命令，用于设置脚本执行策略，以决定是否可以执行本地或远程下载的脚本。
+
+ExecutionPolicy 参数后面跟的值有：
+
+Restricted：默认设置，不允许任何脚本运行。
+
+AllSigned：只能运行由可信发布者签名的脚本。
+
+RemoteSigned：运行本地未签名的脚本，以及由可信发布者签名的远程脚本。
+
+Get-ExecutionPolicy -List
+
+Terminal: Select Default Profile
