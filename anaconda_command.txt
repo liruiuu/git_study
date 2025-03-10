@@ -48,7 +48,7 @@ conda activate  pyth3.7-env
 
 conda remove -n  pyth3.7-env --all
 
-
+pytorch 安装命令：pip install torch torchvision torchaudio
 
 可查看目前所安装的所有包
 pip list
