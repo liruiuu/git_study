@@ -17,8 +17,6 @@ git push -u origin main
 git clone https://gitee.com/ryze_lee/pdf-ryze.git
 git add .
 git commit -m "first commit"
-git push
-
 git push -u origin main
 git push -u origin master 
 
